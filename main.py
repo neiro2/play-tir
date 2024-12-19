@@ -28,8 +28,7 @@ color = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
 running = True
 while running:
   screen.fill(color)  # заливаем экран рондомным цветом
-
-for event in pygame.event.get():
+  for event in pygame.event.get():
     if event.type == pygame.QUIT:  # условие для завершения игры при нажатии на крестик
             running = False
     if event.type == pygame.MOUSEBUTTONDOWN:  # условия для обработки клика мышью
