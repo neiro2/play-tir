@@ -20,21 +20,10 @@ target_image = pygame.image.load('img/target.png') # создаем переме
 target_width = 80 # ширина
 target_height = 80 # высота
 
-# Создаем список мишеней
-targets = []
-num_targets = 5
+#target_x = random.randint (0,SCREEN_WIDTH - target_width)
+target_y = random.randint (0, SCREEN_HEIGHT - target_height)
 
-for _ in range(num_targets):
-    target = {
-        'x': random.randint(0, SCREEN_WIDTH - target_width),
-        'y': random.randint(0, SCREEN_HEIGHT - target_height),
-        'color': (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)),
-        'points': random.randint(1, 10)
-    }
-    targets.append(target)
-
-misses = 0
-score = 0
+color = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
 
 
 
