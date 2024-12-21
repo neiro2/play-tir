@@ -22,7 +22,8 @@ target_height = 80 # высота
 
 #target_x = random.randint (0,SCREEN_WIDTH - target_width)
 target_y = random.randint (0, SCREEN_HEIGHT - target_height)
-
+speed_x = random.choice ([0,5])
+speed_y = random.choice ([0,5])
 color = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
 
 
