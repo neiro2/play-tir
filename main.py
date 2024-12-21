@@ -28,6 +28,7 @@ speed_y = random.choice ([0,5])
 
 color = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
 
+
 running = True
 while running:
   screen.fill(color)  # заливаем экран рондомным цветом
